@@ -5,3 +5,6 @@
 
 * initial_load
 >  Download data file(csv) via ftp and import it to Hana database
+
+* kafkaSimulator
+>  A simulator based on kafka producer client, used to send taxi GPS record
