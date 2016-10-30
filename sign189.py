@@ -100,6 +100,7 @@ class Auto189Sign(object):
             return False
         else:
             print('----- Logon success -----')
+            return True
 
     @staticmethod
     def __save_response(res, name):
@@ -128,7 +129,7 @@ if __name__ == '__main__':
     user = raw_input('Input user name:')
     password = raw_input('Input password:')
     sign_proxy = Auto189Sign(user, password, Auto189Sign.BROAD_BAND_USER)
-    sign_proxy.logon()
-    while 1:
-        sign_proxy.sign()
-        time.sleep(300)
+    if sign_proxy.logon():
+        while 1:
+            sign_proxy.sign()
+            time.sleep(300)
