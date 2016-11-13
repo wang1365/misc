@@ -8,9 +8,8 @@ SRC_UTC_FLAG = False
 TAR_UTC_FLAG = True
 DATETIME_FORMATTER = '%Y-%m-%d %X'
 
-r = redis.Redis(host="10.128.184.167", port=6379)
-r.hset(name='test', key='a', value=1)
 
+# Sample taxi GPS point
 # VEHICLE_TYPE, VEHICLE_MODEL, VEHICLE_NUM,  PLATE_COLOR, RECORD_TIME ,        LONGITUDE,LATITUDE, STOWAGE, ALARM, OVER_SPEED_TIME, SPEED, DIRECTION, ALTITUDE, BUS_ROUTE, BUS_DIRECTION, RECEIVE_TIME
 # 20,       A1,                苏A88322,     2,           2015-11-23 23:27:00, 118.69173,32.18058, 0,       0,     28800,           0.0,    0.0,      0.0,       ,         ,              2015-11-23 23:27:26, 2015-11-23 23:27:00,23:25:00,50616,320100,'
 # 0         1                  2             3            4                    5         6         7        8      9                10      11        12         13        14             15
