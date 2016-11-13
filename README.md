@@ -8,3 +8,6 @@
 
 * kafkaSimulator
 >  A simulator based on kafka producer client, used to send taxi GPS record
+
+* redisWriter
+> Read taxi GPS point from csv file, then send to redis
